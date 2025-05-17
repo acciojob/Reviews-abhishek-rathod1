@@ -60,7 +60,7 @@ const App = () => {
         })}
       </div>
       <div className='btn-container'>
-        <button onClick={() => setCurrent(Math.floor(current%4)-1)} className='prev-btn'>Previous</button>
+        <button onClick={() => setCurrent(current==1 ? 4 : current-1 )} className='prev-btn'>Previous</button>
         <button onClick={()=>setCurrent(Math.floor(current%4)+1)}  className='next-btn'>Next</button>
         <button onClick={()=>setCurrent(Math.floor(Math.random()*4)+1)} className='random-btn'>surprise me</button>
       </div>
