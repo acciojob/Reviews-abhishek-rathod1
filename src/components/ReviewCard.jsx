@@ -6,7 +6,7 @@ const ReviewCard = ({review}) => {
   console.log(review);
   // console.log(typeof review.name);
   return (
-    <div className='review'>
+    <div className='reviewCard'>
       <div id={'author-'+review.id} className='author'> Author- {review.name}</div>
       <div className='job'>Job -{review.job}</div>
       <div className='info'>Review - {review.text}</div>
