@@ -45,7 +45,7 @@ const App = () => {
   ];
 
 
-  let curretnRev = reviews.filter((rev)=>rev.id==current);
+  let curretnRev = reviews.filter((rev)=>rev.id===current);
   console.log('current index', curretnRev);
 
 
@@ -55,9 +55,7 @@ const App = () => {
       <h1 id="review-heading">Our Reviews</h1>
       <div className="review">
         {/* <ReviewCard review = {curretnRev[0]}/> */}
-        {curretnRev.map((item,index)=>{
-          return <ReviewCard key={index} review = {item} />
-        })}
+        {curretnRev.map((item,index)=><ReviewCard key={index} review = {item} />)}
       </div>
       <div className='btn-container'>
         <button onClick={() => setCurrent(current==1 ? 4 : current-1 )} className='prev-btn'>Previous</button>
