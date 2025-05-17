@@ -55,8 +55,8 @@ const App = () => {
       <h1 id="review-heading">Our Reviews</h1>
       <div className="reviewContainer">
         {/* <ReviewCard review = {curretnRev[0]}/> */}
-        {curretnRev.map((item)=>{
-          return <ReviewCard review = {item} />
+        {curretnRev.map((item,index)=>{
+          return <ReviewCard key={index} review = {item} />
         })}
       </div>
       <div className='btn-container'>
