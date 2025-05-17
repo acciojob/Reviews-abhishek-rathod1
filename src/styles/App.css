@@ -9,4 +9,41 @@ button{
     text-align: center;
     justify-content: center;
     align-items: center;
+    width: 200px;
+    padding: 10px;
+    font-size: 22px;
+    margin: 20px;
+    border-radius: 10px;
 }
+
+button:hover{
+    background-color: #01394c;
+}
+
+
+.reviewContainer{
+    display: flex;
+    justify-content: center;    
+    border: 1px solid black;
+    padding: 10px;
+    background-color: aquamarine;
+    height: 500px;
+    
+}
+
+.review{
+   
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 32px;
+    height: 500px;
+}
+
+#person-img{
+    /* height: 500px; */
+    /* width: 50%; */
+    overflow: hidden;
+}
+
